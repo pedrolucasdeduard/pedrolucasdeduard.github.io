@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="fade-in">
+    <header>
+        <nav>
+            <div class="logo">Restaurante de filmes</div>
+            <ul>
+                <li><a href="#" onclick="mostrarSecao('menu')">Menu</a></li>
+                <li><a href="#" onclick="mostrarSecao('reservas')">Reservas</a></li>
+              <li><a href="#" onclick="mostrarSecao('contato')">Contato</a></li>
+                    </ul>
+                </nav>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="inicio">
+        <div class="hero">
+            <h1 class="fade-in">bem vindo ao restaurantes de filmes: </h1>
+            <p>Experimente dos melhores filmes:</p>
+            
+        </div>
+    </section>
+
+    
+        <section id="menu-secao" style="display:none;">
+            <h2 class="fade-in" >Menu</h2>
+            <div class="cardapio">
+                <div class="prato">
+                    <h3>Harry potter</h3>
+                    <img src="harry.jpeg" alt="">
+                    <p>Harry Potter é uma série de sete romances de fantasia escrita pela autora britânica J. K. Rowling. A série narra as aventuras de um jovem chamado Harry James Potter, que descobre aos 11 anos de idade que é um bruxo ao ser convidado para estudar na Escola de Magia e Bruxaria de Hogwarts. O arco de história principal diz respeito às amizades de Harry com outros bruxos de sua idade, como Ron Weasley e Hermione Granger, e também com o diretor de Hogwarts Albus Dumbledore, considerado o maior dos magos, e seus conflitos com o bruxo das trevas Lord Voldemort, que pretende se tornar imortal, conquistar o mundo dos bruxos, subjugar as pessoas não-mágicas e destruir todos aqueles que estão em seu caminho, especialmente Harry Potter, a quem ele considera seu maior rival.</p>
+                    <span class="preco">R$ 20,00</span>
+                </div>
+                <div class="prato">
+                    <h3>Senhor dos aneis</h3>
+                    <img src="senhor.jpeg" alt="">
+                    <p>O Senhor dos Anéis (no original em inglês, The Lord of the Rings) é uma trilogia cinematográfica dirigida por Peter Jackson com base na obra-prima homónima de J. R. R. Tolkien. Os três filmes foram rodados em simultâneo na Nova Zelândia,[1] faturaram cerca de 3 bilhões (US$ 2.925.155.189) de dólares de receitas conjuntas de bilheteira[2] e foram galardoados com 17 Oscars, entre os 30 para os quais foram nomeados.[3] e é a franquia cinematográfica mais premiada da história</p>
+                    <span class="preco">R$ 25,00</span>
+                </div>
+                <div class="prato">
+                    <h3>Shrek</h3>
+                    <img src="shrerk.jpeg" alt="">
+                    <p>Shrek[2][4] é um filme norte-americano de 2001 de animação computadorizada dos gêneros fantasia, aventura e comédia produzido pela PDI/DreamWorks, lançado pela DreamWorks Pictures e dirigido por Andrew Adamson e Vicky Jenson. Com Mike Myers no papel do personagem-título, o filme também estrela Eddie Murphy, Cameron Diaz e John Lithgow. É livremente inspirado pelo livro Shrek!, escrito por William Steig e lançado em 1990, e de alguma forma também serve como uma paródia, alvejando outros filmes baseados em fantasias infantis, grande parte da Disney.</p>
+                    <span class="preco">R$ 12,00</span>
+                </div>
+                <div class="prato">
+                    <h3>Piratas do caribe</h3>
+                    <img src="pira.jpeg" alt="">
+                    <p>Pirates of the Caribbean é uma série de filmes de fantasia e aventura, baseadas no brinquedo Pirates of the Caribbean dos parques temáticos da Walt Disney Parks and Resorts iniciada em 2006, dirigido por Gore Verbinski e Rob Marshall, escrito por Terry Rossio e Ted Elliott, e produzido por Jerry Bruckheimer, sobre as aventuras do Capitão Jack Sparrow (Johnny Depp) e outros personagens como, Will Turner (Orlando Bloom), Elizabeth Swann (Keira Knightley), Capitão Hector Barbossa (Geoffrey Rush), Joshamee Gibbs (Kevin McNally), Davy Jones (Bill Nighy), Angelica (Penélope Cruz) e Barba Negra (Ian McShane).</p>
+                    <span class="preco">R$ 18,00</span>
+                </div>
+                <div class="prato">
+                    <h3>Star wars</h3>
+                    <img src="star.jpeg" alt="">
+                    <p>Star Wars (Brasil: Guerra nas Estrelas / Portugal: Guerra das Estrelas) é uma franquia do tipo space opera estadunidense criada pelo cineasta George Lucas, que conta com uma série de nove filmes de fantasia científica e dois spin-offs.[1] O primeiro filme foi lançado apenas com o título Star Wars,[2] em 25 de maio de 1977, e tornou-se um fenômeno mundial inesperado de cultura popular,[3] sendo responsável pelo início da "era dos blockbusters", que são superproduções cinematográficas que fazem sucesso nas bilheterias e viram franquias com brinquedos, jogos, livros, etc.</p>
+                    <span class="preco">R$ 19,00</span>
+                </div>
+                <div class="prato">
+                    <h3>Alien franchise</h3>
+                    <img src="alien.jpeg" alt="">
+                    <p>Alien é uma franquia de mídia de terror/ação de ficção científica centrada na série de filmes que retrata a subtenente Ellen Ripley (Sigourney Weaver) e suas batalhas com uma forma de vida extraterrestre, comumente referida como "o Alien" ou Xenomorfo.</p>
+                    <span class="preco">R$ 18,00</span>
+                </div>
+            </div>
+        </section>
+            <section  id="reservas-secao" style="display:none;">
+                <h2 class="fade-in">Reservas</h2>
+                <p>Faça sua reserva agora!</p>
+                <form id="reservation-form">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="phone">Telefone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    
+                    <label for="date">Data:</label>
+                    <input type="date" id="date" name="date" required>
+                    
+                    <label for="time">Horário:</label>
+                    <input type="time" id="time" name="time" required>
+                    
+                    <label for="guests">Número de convidados:</label>
+                    <input type="number" id="guests" name="guests" min="1" required>
+                    <label for="menu">Selecione os filmes desejados:</label>
+
+                <select id="menu" name="menu" required>
+                    <option value="">Selecione um filme</option>
+                    <option value="Prato simples">harry potter 20$</option>
+                    <option value="Especial da casa">senhor dos aneis 25$</option>
+                    <option value="Salada especial">shrek 12$</option>
+                    <option value="Salada especial">piratas do caribe 18$</option>
+                    <option value="Salada especial">star wars 19$</option>
+                    <option value="Salada especial">alien franchise 18$</option>
+                </select>
+                          
+                    <label for="comments">Comentários adicionais:</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+                    
+                    <input type="submit" value="Enviar Reserva">
+                </form>
+            </section>
+        </form>
+    </section>
+
+    <section id="contato-secao" style="display:none;">
+        <h2 class="fade-in" >Contato</h2>
+        <h2>Contato</h2>
+    <p>Siga-nos no Instagram e entre em contato por telefone:</p>
+    <p>
+        <a href="https://www.instagram.com/pedro_opinioes/" target="_blank">
+            <img src="instagram.jpg" alt="Ícone do Instagram" id="instagram-icon"> Instagram
+            
+        </a>
+    </p>
+    <p id="telefone">
+        <img src="zap.png" alt="whatzap icone" id="zap-icon">  Telefone: 87 999963496
+    </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 pedro</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
